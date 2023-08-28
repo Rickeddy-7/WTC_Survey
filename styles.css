@@ -1,0 +1,68 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: lightskyblue;
+    /* background-image: url("/Users/rik_edi/Downloads/wtc-logo.webp"); */
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h1{
+    margin: 1em auto;
+    text-align: center;
+    font-size: 40px;
+}
+
+p{
+    margin: 1em auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+form {
+    width: 800px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+fieldset {
+    border: none;
+    margin: 2px 0;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 25px;
+    color: black;
+}
+
+input {
+    margin: 10px 0 20px;
+    width: 100%;
+    height: 30px;
+    background-color: lightgrey;
+    border: 2px solid grey;
+    border-radius: 5px;
+    color: black;
+    font-size: 20px;
+}
+
+input[type="submit"] {
+    display: block;
+    color: black;
+    width: 30%;
+    margin: 10px auto;
+    height: 50px;
+    font-size: 30px;
+    background-color: lightgrey;
+    border-color: grey;
+    border-radius: 50px;
+}
