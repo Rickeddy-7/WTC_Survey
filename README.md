@@ -7,7 +7,7 @@ placement season.
 The aim is conduct sentiment analysis on how ready they are, where they would like to work, 
 do they find the course valuable, etc. I wanted to explore the process of data collection in a real life setting and apply my knowledge of data manipulation to try and draw indights as to how students are feeling and what they are thinking heading into the real world of software development.
 
-# TOOLS
+## TOOLS
 Form built with basic HTML and CSS
 Database: MySQL (with Python connector)
 Visualisation: Tableau
