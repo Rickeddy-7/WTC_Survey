@@ -11,25 +11,48 @@
     <h1>- WTC SURVEY -</h1>
     <p><i>Please fill out this survey as honestly as you can</i></p>
 
-    <form method="post" action='https://register-demo.freecodecamp.org'>
+    <form method="post" action="" autocomplete="on">
       <fieldset>
         <label for="age">Please enter your Age:
-            <input id="age" name="age" type="number" required /></label>
+            <input id="age" type="number" value="24" required autofocus/></label>
+
         <label for="gender">Please enter your Gender:
-            <input id="gender" name="gender" type="text" required /></label>
+            <select id="gender">
+                <option value="">(Please select)</option>
+                <option value="N" selected>Non-Binary</option>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select></label>
+
         <label for="career">What feild do you want to venture into?
-            <input id="career" name="career" type="text" required /></label>
+            <input id="career" type="text" value="career" required /></label>
+
         <label for="hired?">Do you feel like you're ready to be hired?
-            <input id="hired?" name="hired?" type="text" required /></label>
+            <select id="hired?" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select></label>
+
         <label for="company">What company are you interested in working for?
-            <input id="company" name="company" type="text" required /></label>
+            <input id="company" type="text" value="company" required /></label>
+
         <label for="mentors">Do you find the industry mentors helpful in any way?
-            <input id="mentors" name="mentors" type="text" required /></label>
+            <select id="mentors" required>
+                <option value="Yes">Yes</option>
+                <option value="No" selected>No</option>
+            </select></label></label>
+
         <label for="rate">On a scale of 1-10, how would you rate the WTC Curriculum?
-            <input id="rate" name="rate" type="number" required /></label>
+            <input id="rate" type="number" value="7" required /></label>
+
+        <label for="net-promoter-score">On a scale of 1-10, 
+            how likely are you to recommend WeThinkCode to a friend or collegue?
+            <input id="net-promoter-score" type="number" value="8" required /></label>
       </fieldset>
 
-      <input type="submit" value="Submit" />
+      <input id="submit" type="submit" value="Submit" />
     </form>
+
+    <script src="script.js"></script>
   </body>
 </html>
