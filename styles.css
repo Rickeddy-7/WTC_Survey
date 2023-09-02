@@ -4,7 +4,7 @@ body {
     margin: 0;
     background-color: lightskyblue;
     /* background-image: url("/Users/rik_edi/Downloads/wtc-logo.webp"); */
-    color: white;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
@@ -44,7 +44,7 @@ label {
     color: black;
 }
 
-input {
+input, select {
     margin: 10px 0 20px;
     width: 100%;
     height: 30px;
@@ -53,6 +53,10 @@ input {
     border-radius: 5px;
     color: black;
     font-size: 20px;
+}
+
+select{
+    width: 785px;
 }
 
 input[type="submit"] {
