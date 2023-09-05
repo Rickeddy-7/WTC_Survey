@@ -1,6 +1,5 @@
 
 function getSurveyInfo(){
-    
     let age = document.getElementById("age").value;
     console.log("Age: " + age);
     let gender = document.getElementById("gender").value;
@@ -17,11 +16,7 @@ function getSurveyInfo(){
     console.log("rate: " + rate);
     let recommend = document.getElementById("net-promoter-score").value;
     console.log("recommend: " + recommend);
-    alert("Thanks so much for provinding your insights and participating in my survey!")
+    // alert("Thanks so much for provinding your insights and participating in my survey!")
 }
 
-function writeDataToJson(){
-    //TODO: WRITE THE FORM DATA INTO A JSON FILE.. I THINK
-}
-
-let submit = document.getElementById("submit").addEventListener("click", getSurveyInfo)
+document.getElementById("submit").addEventListener("click", getSurveyInfo());

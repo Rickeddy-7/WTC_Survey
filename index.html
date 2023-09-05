@@ -11,48 +11,48 @@
     <h1>- WTC SURVEY -</h1>
     <p><i>Please fill out this survey as honestly as you can</i></p>
 
-    <form method="post" action="" autocomplete="on">
+    <form method="post" action="http://localhost:8000">
       <fieldset>
         <label for="age">Please enter your Age:
-            <input id="age" type="number" value="24" required autofocus/></label>
+            <input name="age" id="age" type="number" required autofocus/></label>
 
         <label for="gender">Please enter your Gender:
-            <select id="gender">
+            <select id="gender" name="gender" >
                 <option value="">(Please select)</option>
-                <option value="N" selected>Non-Binary</option>
-                <option value="M">Male</option>
-                <option value="F">Female</option>
+                <option value="Non-Binary" selected>Non-Binary</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
             </select></label>
 
         <label for="career">What feild do you want to venture into?
-            <input id="career" type="text" value="career" required /></label>
+            <input name="career" id="career" type="text" value="" required /></label>
 
         <label for="hired?">Do you feel like you're ready to be hired?
-            <select id="hired?" required>
+            <select name="ready" id="hired?" required>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
             </select></label>
 
         <label for="company">What company are you interested in working for?
-            <input id="company" type="text" value="company" required /></label>
+            <input name="company" id="company" type="text" value="" required /></label>
 
         <label for="mentors">Do you find the industry mentors helpful in any way?
-            <select id="mentors" required>
+            <select name="mentors" id="mentors" required>
                 <option value="Yes">Yes</option>
                 <option value="No" selected>No</option>
             </select></label></label>
 
         <label for="rate">On a scale of 1-10, how would you rate the WTC Curriculum?
-            <input id="rate" type="number" value="7" required /></label>
+            <input name="curriculum" id="rate" type="number" value="1" required /></label>
 
         <label for="net-promoter-score">On a scale of 1-10, 
             how likely are you to recommend WeThinkCode to a friend or collegue?
-            <input id="net-promoter-score" type="number" value="8" required /></label>
+            <input name="nps" id="net-promoter-score" type="number" value="1" required /></label>
       </fieldset>
 
-      <input id="submit" type="submit" value="Submit" />
+      <input id="submit" type="submit" value="Submit" href="thanks.html"/>
     </form>
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
   </body>
 </html>
